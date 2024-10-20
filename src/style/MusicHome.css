@@ -1,0 +1,125 @@
+/* MusicHome.css */
+
+/* Background Image for Music Home Page */
+.abc {
+  background-image: url("../Assets/Music_Image.png"); /* Path to your background image */
+  background-size: cover; /* Scale the image to cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+}
+
+/* Button Styling */
+#btn {
+  color: rgb(
+    0,
+    0,
+    0
+  ) !important; /* Use !important to override any inline styles */
+}
+
+.custom-button {
+  padding: 6px 18px;
+  font-size: 16px;
+  background: linear-gradient(
+    to right,
+    #0fa1d2,
+    #8bc34a
+  ); /* New gradient colors */
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  background: linear-gradient(to right, #794bec, #020945);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .custom-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Card Styling */
+.trending-section {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Semi-transparent background for readability */
+  border-radius: 20px;
+  padding: 12px;
+}
+
+.titlePL {
+  color: aliceblue;
+}
+
+.custom-card-horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #acbec8;
+  color: rgb(7, 0, 0);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 10cm; /* Adjust card width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.playlist-image-horizontal {
+  width: 150px; /* Image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-card-horizontal:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #ec4bd4, #000000);
+  color: rgb(255, 254, 254);
+}
+
+.playlist-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .custom-card-horizontal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .playlist-image-horizontal {
+    margin-right: 0;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,180 @@
+/* Background Image */
+.BgImg {
+  background-image: url("../Assets/Music_Image.png"); /* Path to your background image */
+  background-size: cover; /* Scale the image to cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+}
+
+/* Search bar */
+.inputBox {
+  padding: 6px 18px;
+  border-radius: 50px;
+}
+
+/* Search Button */
+#btn {
+  color: rgb(
+    0,
+    0,
+    0
+  ) !important; /* Use !important to override any inline styles */
+}
+
+.custom-button {
+  padding: 6px 24px;
+  font-size: 20px;
+  background: linear-gradient(
+    to right,
+    #0fa1d2,
+    #8bc34a
+  ); /* New gradient colors */
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  background: linear-gradient(to right, #794bec, #020945);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .custom-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Section style */
+.trending-section {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Semi-transparent background for readability */
+  border-radius: 20px;
+  padding: 12px;
+}
+
+.titlePL {
+  color: aliceblue;
+}
+
+.custom-card-horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #191b1c;
+  color: rgb(255, 247, 247);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 10cm; /* Adjust card width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.playlist-image-horizontal {
+  width: 150px; /* Image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-card-horizontal:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #ec4bd4, #000000);
+  color: rgb(255, 254, 254);
+}
+
+.playlist-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust gap between cards in the same row */
+}
+
+@media (max-width: 768px) {
+  .custom-card-horizontal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .playlist-image-horizontal {
+    margin-right: 0;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+}
+
+/* Section2 */
+.Section2 {
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 12px;
+}
+
+/* Flexbox for Rows */
+.row-container {
+  display: flex; /* Enables Flexbox layout */
+  justify-content: space-between; /* Space between the rows */
+  flex-wrap: wrap; /* Allows wrapping if the container is too small */
+  margin: 10px; /* Optional: margin for spacing */
+}
+
+.row {
+  flex: 1; /* Equal width for each row */
+  margin: 0; /* Remove side margins */
+  margin-bottom: 10px; /* Space between rows */
+}
+
+/* Comment Section */
+.comment-section {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.comment-display {
+  margin-top: 10px;
+}
+
+.comment {
+  color: #fff;
+  margin: 5px 0;
+}
+
+/* Comment Section */
+.cmt {
+  background-color: black;
+  padding: 8px;
+  border-radius: 5px;
+}
