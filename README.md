@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Deployed Using
 
 Deployment Platform.  
-Open to view it in your browser: [http://localhost:3000](http://localhost:3000).
+Open to view it in your browser: [https://music-app-clone-ten.vercel.app/](https://music-app-clone-ten.vercel.app/).
 
 ## Available Scripts
 
