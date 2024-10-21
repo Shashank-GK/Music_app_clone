@@ -3,6 +3,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is a music streaming web application that allows users to browse, play, and enjoy their favorite songs.
 
+## Deployed Using
+vercel
+Open [https://music-app-clone-ten.vercel.app/](https://music-app-clone-ten.vercel.app/) to view it in your browser.
+
 ## Available Scripts
 
 In the project directory, you can run:
