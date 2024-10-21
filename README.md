@@ -54,7 +54,7 @@ You don't have to use `eject`. The curated feature set is suitable for small and
 - **React**: Front-end JavaScript library for building the user interface.
 - **HTML5 & CSS3**: For structuring and styling the app.
 - **JavaScript (ES6+)**: Core language for adding functionality.
-- **Node.js & npm**: Used for package management and running the development server.
+- **npm**: Used for package management and running the development server.
 - **React Router**: For handling in-app navigation.
 - **Custom Hooks & State Management**: To manage application state.
 - **Media Player Library (Optional)**: For managing audio playback (e.g., `react-h5-audio-player`).
