@@ -113,6 +113,52 @@ export default function MusicExplore() {
                   </div>
                 </CardBody>
               </Card>
+              {/* Playlist Card 4 */}
+              <Card className="custom-card-horizontal mx-3 my-3">
+                <CardBody className="flex-row">
+                  <img
+                    src={ExpPlc1}
+                    alt="Playlist Cover"
+                    className="playlist-image-horizontal"
+                  />
+                  <div className="text-content">
+                    <p className="text-tiny uppercase font-bold">#Sandalwood</p>
+                    <h4 className="font-bold text-large">Sandalwood Hits</h4>
+                  </div>
+                </CardBody>
+              </Card>
+              {/* Playlist Card 5 */}
+              <Card className="custom-card-horizontal mx-3 my-3">
+                <CardBody className="flex-row">
+                  <img
+                    src={ExpPlc3}
+                    alt="Playlist Cover"
+                    className="playlist-image-horizontal"
+                  />
+                  <div className="text-content">
+                    <p className="text-tiny uppercase font-bold">
+                      #Release Radar
+                    </p>
+                    <h4 className="font-bold text-large">Discover</h4>
+                  </div>
+                </CardBody>
+              </Card>
+              {/* Playlist Card 6 */}
+              <Card className="custom-card-horizontal mx-3 my-3">
+                <CardBody className="flex-row">
+                  <img
+                    src={ExpPlc3}
+                    alt="Playlist Cover"
+                    className="playlist-image-horizontal"
+                  />
+                  <div className="text-content">
+                    <p className="text-tiny uppercase font-bold">
+                      #Release Radar
+                    </p>
+                    <h4 className="font-bold text-large">Discover</h4>
+                  </div>
+                </CardBody>
+              </Card>
             </div>
           </section>
         </div>

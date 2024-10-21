@@ -84,9 +84,54 @@ export default function MusicHome() {
                   className="playlist-image-horizontal"
                 />
                 <div className="text-content">
+                  <p className="text-tiny uppercase font-bold">Mix track</p>
+                  <small className="text-default-500">25 Tracks</small>
+                  <h4 className="font-bold text-large">Relax vibes</h4>
+                </div>
+              </CardBody>
+            </Card>
+            {/* Playlist Card 4 */}
+            <Card className="custom-card-horizontal mx-3 my-3">
+              <CardBody className="flex-row">
+                <img
+                  src={PLC1}
+                  alt="Playlist Cover"
+                  className="playlist-image-horizontal"
+                />
+                <div className="text-content">
+                  <p className="text-tiny uppercase font-bold">Ponk Mix</p>
+                  <small className="text-default-500">25 Tracks</small>
+                  <h4 className="font-bold text-large">International Hits</h4>
+                </div>
+              </CardBody>
+            </Card>
+            {/* Playlist Card 5 */}
+            <Card className="custom-card-horizontal mx-3 my-3">
+              <CardBody className="flex-row">
+                <img
+                  src={PLC1}
+                  alt="Playlist Cover"
+                  className="playlist-image-horizontal"
+                />
+                <div className="text-content">
                   <p className="text-tiny uppercase font-bold">Pop Mix</p>
                   <small className="text-default-500">25 Tracks</small>
-                  <h4 className="font-bold text-large">Indian Hits</h4>
+                  <h4 className="font-bold text-large">Ultimate Hits</h4>
+                </div>
+              </CardBody>
+            </Card>
+            {/* Playlist Card 6 */}
+            <Card className="custom-card-horizontal mx-3 my-3">
+              <CardBody className="flex-row">
+                <img
+                  src={PLC1}
+                  alt="Playlist Cover"
+                  className="playlist-image-horizontal"
+                />
+                <div className="text-content">
+                  <p className="text-tiny uppercase font-bold">Mix</p>
+                  <small className="text-default-500">25 Tracks</small>
+                  <h4 className="font-bold text-large">Sandal Wood Hits</h4>
                 </div>
               </CardBody>
             </Card>

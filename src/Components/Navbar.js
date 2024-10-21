@@ -10,7 +10,8 @@ const Navbar = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     const query = e.target.search.value; // Get the search query
-    // Implement search logic here
+    // Implement search logic here, e.g., redirecting or fetching data
+    console.log("Search query:", query);
   };
 
   return (
@@ -21,7 +22,7 @@ const Navbar = () => {
             className="mx-2"
             src={Music_Logo}
             height="35"
-            alt="Logo"
+            alt="Music App Logo"
             loading="lazy"
           />
         </Link>
@@ -52,13 +53,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/library">
-                Library
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/playlists">
-                Playlists
+              <Link className="nav-link" to="/current-playlists">
+                Current Playlists
               </Link>
             </li>
             <li className="nav-item">
@@ -78,7 +74,7 @@ const Navbar = () => {
             <button
               className="btn btn-outline-light rounded-pill"
               type="submit"
-              aria-label="Search"
+              aria-label="Submit search"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,12 +96,13 @@ const Navbar = () => {
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              aria-label="User options"
             >
               <img
                 src={Profile_logo}
                 className="rounded-circle"
                 height="35"
-                alt="Avatar"
+                alt="User Avatar"
                 loading="lazy"
               />
             </Link>
@@ -126,11 +123,6 @@ const Navbar = () => {
               <li>
                 <Link className="dropdown-item" to="/logout">
                   Logout
-                </Link>
-              </li>
-              <li>
-                <Link className="dropdown-item" to="/login">
-                  Login
                 </Link>
               </li>
             </ul>

@@ -1,24 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import "../style/LoginPage.css";
 
 export default function LoginPage() {
   const navigate = useNavigate(); // Initialize the useNavigate hook
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleLogin = (e) => {
     e.preventDefault(); // Prevent the default form submission
 
-    // Implement your authentication logic here
-    // On successful login, navigate to the desired page
-    navigate("/desired-path"); // Replace '/desired-path' with the actual path you want to navigate to
+    // Simple authentication logic for demonstration purposes
+    if (email === "user@example.com" && password === "password") {
+      // On successful login, navigate to the MusicHome page
+      navigate("/home");
+    } else {
+      alert("Invalid email or password");
+    }
   };
 
   return (
     <div>
       <div id="login-page" className="login-container">
         <form className="form" onSubmit={handleLogin}>
-          {" "}
-          {/* Attach the handleLogin function */}
           <div className="flex-column">
             <label>Email </label>
           </div>
@@ -34,9 +38,11 @@ export default function LoginPage() {
               </g>
             </svg>
             <input
-              type="text"
+              type="email"
               className="input"
               placeholder="Enter your Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
@@ -57,6 +63,8 @@ export default function LoginPage() {
               type="password"
               className="input"
               placeholder="Enter your Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               required
             />
           </div>
@@ -69,8 +77,7 @@ export default function LoginPage() {
           </div>
           <button className="button-submit" type="submit">
             Sign In
-          </button>{" "}
-          {/* Specify type="submit" */}
+          </button>
           <p className="p">
             Don't have an account? <span className="span">Sign Up</span>
           </p>
@@ -85,12 +92,12 @@ export default function LoginPage() {
                 x="0px"
                 y="0px"
                 viewBox="0 0 512 512"
-                style={{ enableBackground: "new 0 0 512 512" }} // Use camelCase for style properties
+                style={{ enableBackground: "new 0 0 512 512" }}
               >
                 <path
                   style={{ fill: "#FBBB00" }}
                   d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256
-				c0-43.905,11.042-84.211,30.509-119.318l65.139,1.378l17.822,66.532L113.47,309.408z"
+                  c0-43.905,11.042-84.211,30.509-119.318l65.139,1.378l17.822,66.532L113.47,309.408z"
                 />
                 <path
                   style={{ fill: "#518EF8" }}
@@ -99,7 +106,7 @@ export default function LoginPage() {
                 <path
                   style={{ fill: "#28B446" }}
                   d="M238.698,433.254c-56.196,0-106.043-23.458-142.382-59.157L85.858,464.62
-				C138.784,497.193,189.728,512,238.698,512c103.522,0,195.788-66.663,228.427-159.882L238.698,433.254z"
+                  C138.784,497.193,189.728,512,238.698,512c103.522,0,195.788-66.663,228.427-159.882L238.698,433.254z"
                 />
                 <path
                   style={{ fill: "#FF3D00" }}
@@ -108,8 +115,8 @@ export default function LoginPage() {
                 <path
                   style={{ fill: "#D93F00" }}
                   d="M238.698,433.254c-19.338,0-37.418-2.358-54.608-6.661l134.951-72.642
-				c40.165,15.434,86.346,24.075,138.857,24.075C497.837,478.026,403.422,512,238.698,512
-				c-52.156,0-101.467-15.233-143.517-41.646L238.698,433.254z"
+                  c40.165,15.434,86.346,24.075,138.857,24.075C497.837,478.026,403.422,512,238.698,512
+                  c-52.156,0-101.467-15.233-143.517-41.646L238.698,433.254z"
                 />
               </svg>
               Google
@@ -121,7 +128,7 @@ export default function LoginPage() {
                 viewBox="0 0 576 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M287.9 0C128.9 0 0 128.9 0 287.9c0 143.5 104.9 262.5 240.5 285.5v-202h-72.5v-83h72.5v-63.6c0-71.7 43.8-110.1 109.6-110.1 31.2 0 63.2 5.5 63.2 5.5v69.5h-35.6c-35.1 0-45.8 21.7-45.8 43.9v52.1h83l-13.1 83h-69.9v202C471.1 550.4 576 431.4 576 287.9 576 128.9 447.1 0 287.9 0z" />
+                <path d="M287.9 0C128.9 0 0 128.9 0 287.9c0 143.5 104.9 262.5 240.5 285.5v-202h-72.5v-83h72.5v-63.6c0-71.7 43.8-110.1 109.6-110.1 31.2 0 63.2 5.5 63.2 5.5v69.5h-35.6c-35.1 0-46.2 21.7-46.2 43.6v55.1h78.2l-12.5 83h-65.8v202C471.1 549.4 576 430.5 576 287.9 576 128.9 447.1 0 287.9 0z"></path>
               </svg>
               Facebook
             </button>

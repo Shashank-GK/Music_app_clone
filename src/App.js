@@ -1,9 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import LoginPage from "./Components/LoginPage";
 import MusicHome from "./Components/MusicHome";
 import MusicExplore from "./Components/MusicExplore";
+import MusicPlay from "./Components/MusicPlay";
 import "./App.css"; // Your main CSS file
 
 function App() {
@@ -11,10 +17,12 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<MusicHome />} />
-        <Route path="/login" element={<LoginPage />} />
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/home" element={<MusicHome />} />
         <Route path="/explore" element={<MusicExplore />} />
-        {/* Add other routes as needed */}
+        <Route path="/current-playlists" element={<MusicPlay />} />
+        {/* Redirect any unknown route to LoginPage */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
